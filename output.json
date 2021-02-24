@@ -1,0 +1,34 @@
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "", "info": ""}
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "", "info": ""}
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "#Binary-files", "info": ""}
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "#Creating-files", "info": ""}
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "#Data-packs-and-resource-packs", "info": ""}
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "#Image-files", "info": ""}
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "#Json-files", "info": ""}
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "#Lazy-deserialization", "info": ""}
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "#Storing-files-in-zipfiles", "info": ""}
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "#build-process-overview", "info": ""}
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "#command-line-utility", "info": ""}
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "#configuration-file", "info": ""}
+{"filename": "index.rst", "lineno": 6, "status": "unchecked", "code": 0, "uri": "#plugin-pipeline", "info": ""}
+{"filename": "index.rst", "lineno": 117, "status": "working", "code": 0, "uri": "https://github.com/psf/black", "info": ""}
+{"filename": "index.rst", "lineno": 110, "status": "working", "code": 0, "uri": "https://github.com/microsoft/pyright", "info": ""}
+{"filename": "index.rst", "lineno": 97, "status": "working", "code": 0, "uri": "https://github.com/vberlier/pytest-minecraft", "info": ""}
+{"filename": "index.rst", "lineno": 104, "status": "working", "code": 0, "uri": "https://github.com/vberlier/pytest-minecraft", "info": ""}
+{"filename": "index.rst", "lineno": 11, "status": "working", "code": 0, "uri": "https://github.com/mcbeet/beet", "info": ""}
+{"filename": "index.rst", "lineno": 36, "status": "working", "code": 0, "uri": "https://mcbeet.dev/toolchain/", "info": ""}
+{"filename": "index.rst", "lineno": 17, "status": "working", "code": 0, "uri": "https://mcbeet.dev/library/", "info": ""}
+{"filename": "index.rst", "lineno": 1, "status": "working", "code": 0, "uri": "https://minecraft.gamepedia.com/Resource_Pack", "info": ""}
+{"filename": "index.rst", "lineno": 110, "status": "working", "code": 0, "uri": "https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance", "info": ""}
+{"filename": "index.rst", "lineno": 1, "status": "working", "code": 0, "uri": "https://minecraft.gamepedia.com/Data_Pack", "info": ""}
+{"filename": "index.rst", "lineno": 117, "status": "working", "code": 0, "uri": "https://pycqa.github.io/isort/", "info": ""}
+{"filename": "index.rst", "lineno": 91, "status": "working", "code": 0, "uri": "https://python-poetry.org", "info": ""}
+{"filename": "index.rst", "lineno": 13, "status": "working", "code": 0, "uri": "https://pypi.org/project/beet", "info": ""}
+{"filename": "index.rst", "lineno": 12, "status": "redirected", "code": 303, "uri": "https://youtu.be/XTzKmvHqd1g", "info": "https://www.youtube.com/watch?v=XTzKmvHqd1g&feature=youtu.be", "text": "with See Other"}
+{"filename": "index.rst", "lineno": 11, "status": "redirected", "code": 303, "uri": "https://youtu.be/LDvV4_l-PSc", "info": "https://www.youtube.com/watch?v=LDvV4_l-PSc&feature=youtu.be", "text": "with See Other"}
+{"filename": "index.rst", "lineno": 13, "status": "redirected", "code": 303, "uri": "https://youtu.be/QsnQncGxAAs", "info": "https://www.youtube.com/watch?v=QsnQncGxAAs&feature=youtu.be", "text": "with See Other"}
+{"filename": "index.rst", "lineno": 9, "status": "redirected", "code": 303, "uri": "https://youtu.be/JGrJTOhG3pY", "info": "https://www.youtube.com/watch?v=JGrJTOhG3pY&feature=youtu.be", "text": "with See Other"}
+{"filename": "index.rst", "lineno": 10, "status": "redirected", "code": 303, "uri": "https://youtu.be/fQ9up0ELPNE", "info": "https://www.youtube.com/watch?v=fQ9up0ELPNE&feature=youtu.be", "text": "with See Other"}
+{"filename": "toolchain.md", "lineno": 44, "status": "unchecked", "code": 0, "uri": "#build-process-overview", "info": ""}
+{"filename": "toolchain.md", "lineno": 11, "status": "unchecked", "code": 0, "uri": "#plugin-pipeline", "info": ""}
+{"filename": "toolchain.md", "lineno": 11, "status": "unchecked", "code": 0, "uri": "#plugin-pipeline", "info": ""}

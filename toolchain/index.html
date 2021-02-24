@@ -1,0 +1,301 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Toolchain documentation &mdash; beet 0.10.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="prev" title="Library documentation" href="../library/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../" class="icon icon-home" alt="Documentation Home"> beet
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.10
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../library/">Library documentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Toolchain documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#build-process-overview">Build process overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#command-line-utility">Command-line utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration-file">Configuration file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#plugin-pipeline">Plugin pipeline</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">beet</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Toolchain documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/toolchain.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="toolchain-documentation">
+<h1>Toolchain documentation<a class="headerlink" href="#toolchain-documentation" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">beet</span></code> toolchain makes it possible to process data packs and resource packs. It provides a unified developer experience for any tool that you might want to use to support your development workflow. The command-line utility allows you to link your project to minecraft and run the build process anytime you make a modification.</p>
+<p>This page is still a work-in-progress.</p>
+<hr class="docutils" />
+<div class="section" id="build-process-overview">
+<h2>Build process overview<a class="headerlink" href="#build-process-overview" title="Permalink to this headline">¶</a></h2>
+<p>The build process is at the core of the <code class="docutils literal notranslate"><span class="pre">beet</span></code> toolchain. The toolchain first loads your project and config file, and then creates an empty context object holding a blank data pack and a blank resource pack. This context object is then sequentially handed over to each plugin in the <code class="docutils literal notranslate"><span class="pre">beet</span></code> <a class="reference external" href="#plugin-pipeline">pipeline</a> configured by your project. The <a class="reference external" href="#plugin-pipeline">pipeline</a> provides a composable execution model that allows you to combine plugins that cooperate to populate the output data pack and resource pack.</p>
+<p><img alt="Beet build process" src="../_images/build_process.png" /></p>
+</div>
+<div class="section" id="command-line-utility">
+<h2>Command-line utility<a class="headerlink" href="#command-line-utility" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ beet --help
+Usage: beet [OPTIONS] COMMAND [ARGS]...
+
+  The beet toolchain.
+
+Options:
+  -d, --directory DIRECTORY  Use the specified project directory.
+  -c, --config FILE          Use the specified config file.
+  -v, --version              Show the version and exit.
+  -h, --help                 Show this message and exit.
+
+Commands:
+  build  Build the current project.
+  cache  Inspect or clear the cache.
+  link   Link the generated resource pack and data pack to Minecraft.
+  watch  Watch the project directory and build on file changes.
+</pre></div>
+</div>
+<p>TODO</p>
+</div>
+<div class="section" id="configuration-file">
+<h2>Configuration file<a class="headerlink" href="#configuration-file" title="Permalink to this headline">¶</a></h2>
+<p>TODO</p>
+</div>
+<div class="section" id="plugin-pipeline">
+<h2>Plugin pipeline<a class="headerlink" href="#plugin-pipeline" title="Permalink to this headline">¶</a></h2>
+<p>The entire <a class="reference external" href="#build-process-overview">build process</a> revolves around the <code class="docutils literal notranslate"><span class="pre">beet</span></code> pipeline. The pipeline is responsible for loading and running the provided plugins. Plugins are simple functions that are called one after the other on the context object. The <code class="docutils literal notranslate"><span class="pre">beet</span></code> context holds all the data related to the build, such as the data pack, the resource pack, the template manager, or the cache handle.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">beet</span> <span class="kn">import</span> <span class="n">Context</span><span class="p">,</span> <span class="n">Function</span>
+
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Context</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin that adds a function for greeting the player.&quot;&quot;&quot;</span>
+    <span class="n">ctx</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;greet:hello&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Function</span><span class="p">([</span><span class="s2">&quot;say hello&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Plugins can require other plugins at any point. Plugins required by other plugins are called plugin dependencies. Requiring a plugin makes sure that the plugin has been executed before going on. The pipeline makes sure that each distinguishable plugin only runs once, allowing multiple plugins to depend on a shared set of plugins. Requiring plugin dependencies effectively extends the pipeline dynamically, while it’s running.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">beet</span> <span class="kn">import</span> <span class="n">FunctionTag</span>
+
+<span class="k">def</span> <span class="nf">greet_on_load</span><span class="p">(</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Context</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin that calls the greeting function on load.&quot;&quot;&quot;</span>
+    <span class="n">ctx</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="n">greet</span><span class="p">)</span>
+    <span class="n">ctx</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;minecraft:load&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">FunctionTag</span><span class="p">({</span><span class="s2">&quot;values&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;greet:hello&quot;</span><span class="p">]})</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../library/" class="btn btn-neutral float-left" title="Library documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Valentin Berlier
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

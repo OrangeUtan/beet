@@ -1,0 +1,5 @@
+index.rst:12: [redirected with See Other] https://youtu.be/XTzKmvHqd1g to https://www.youtube.com/watch?v=XTzKmvHqd1g&feature=youtu.be
+index.rst:11: [redirected with See Other] https://youtu.be/LDvV4_l-PSc to https://www.youtube.com/watch?v=LDvV4_l-PSc&feature=youtu.be
+index.rst:13: [redirected with See Other] https://youtu.be/QsnQncGxAAs to https://www.youtube.com/watch?v=QsnQncGxAAs&feature=youtu.be
+index.rst:9: [redirected with See Other] https://youtu.be/JGrJTOhG3pY to https://www.youtube.com/watch?v=JGrJTOhG3pY&feature=youtu.be
+index.rst:10: [redirected with See Other] https://youtu.be/fQ9up0ELPNE to https://www.youtube.com/watch?v=fQ9up0ELPNE&feature=youtu.be

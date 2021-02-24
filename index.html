@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Beet documentation &mdash; beet 0.10.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="#" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex/" />
+    <link rel="search" title="Search" href="search/" />
+    <link rel="next" title="Library documentation" href="library/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home" alt="Documentation Home"> beet
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.10
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library/">Library documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="toolchain/">Toolchain documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">beet</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Beet documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="figure align-right">
+<a class="reference internal image-reference" href="_images/logo.png"><img alt="_images/logo.png" src="_images/logo.png" style="width: 76px;" /></a>
+</div>
+<div class="section" id="beet-documentation">
+<h1>Beet documentation<a class="headerlink" href="#beet-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Welcome! This is the place where you’ll eventually find everything there is to know about the <code class="docutils literal notranslate"><span class="pre">beet</span></code> project. The documentation is currently a work-in-progress, you’re welcome to help write guides and contribute example use-cases. In the meantime, don’t be afraid to check out the code!</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 74%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>GitHub</strong></p></td>
+<td><p><a class="reference external" href="https://github.com/mcbeet/beet">https://github.com/mcbeet/beet</a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>PyPI</strong></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/beet">https://pypi.org/project/beet</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound" id="toc">
+<p class="caption"><span class="caption-text">Contents</span><a class="headerlink" href="#toc" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library/">Library documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="library/#Data-packs-and-resource-packs">Data packs and resource packs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library/#Creating-files">Creating files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library/#Storing-files-in-zipfiles">Storing files in zipfiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library/#Json-files">Json files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library/#Lazy-deserialization">Lazy deserialization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library/#Binary-files">Binary files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library/#Image-files">Image files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="toolchain/">Toolchain documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="toolchain/#build-process-overview">Build process overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toolchain/#command-line-utility">Command-line utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toolchain/#configuration-file">Configuration file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toolchain/#plugin-pipeline">Plugin pipeline</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Minecraft <a class="reference external" href="https://minecraft.gamepedia.com/Resource_Pack">resource packs</a> and <a class="reference external" href="https://minecraft.gamepedia.com/Data_Pack">data packs</a> work well as <em>distribution</em> formats but can be pretty limiting as <em>authoring</em> formats. Without the ability to parametrize or create abstractions over assets and data pack resources, projects and libraries created by the community are greatly limited when it comes to reusability and interoperability.</p>
+<p>There’s been a lot of attempts at establishing standardized tooling to improve the development experience and it’s becoming more and more apparent that the problem space is fundamentally multi-paradigm. Different problems require different solutions, so providing unified cross-project reusability needs to involve an interoperability layer that’s sufficiently unopinionated to let all these paradigms shine through.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">beet</span></code> project is meant to serve as a platform for building a cooperative tooling ecosystem by providing a flexible composition model and a user-friendly development workflow.</p>
+<div class="section" id="screencasts">
+<h2>Screencasts<a class="headerlink" href="#screencasts" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Quick start</strong> <a class="reference external" href="https://youtu.be/JGrJTOhG3pY">https://youtu.be/JGrJTOhG3pY</a></p></li>
+<li><p><strong>Command-line</strong> <a class="reference external" href="https://youtu.be/fQ9up0ELPNE">https://youtu.be/fQ9up0ELPNE</a></p></li>
+<li><p><strong>Library overview</strong> <a class="reference external" href="https://youtu.be/LDvV4_l-PSc">https://youtu.be/LDvV4_l-PSc</a></p></li>
+<li><p><strong>Plugins basics</strong> <a class="reference external" href="https://youtu.be/XTzKmvHqd1g">https://youtu.be/XTzKmvHqd1g</a></p></li>
+<li><p><strong>Pipeline configuration</strong> <a class="reference external" href="https://youtu.be/QsnQncGxAAs">https://youtu.be/QsnQncGxAAs</a></p></li>
+</ul>
+</div>
+<div class="section" id="library">
+<h2>Library<a class="headerlink" href="#library" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="https://mcbeet.dev/library/">Documentation</a></p>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">beet</span> <span class="kn">import</span> <span class="n">ResourcePack</span><span class="p">,</span> <span class="n">Texture</span>
+
+<span class="c1"># Open a zipped resource pack and add a custom stone texture</span>
+<span class="k">with</span> <span class="n">ResourcePack</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s2">&quot;stone.zip&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">assets</span><span class="p">:</span>
+    <span class="n">assets</span><span class="p">[</span><span class="s2">&quot;minecraft:block/stone&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Texture</span><span class="p">(</span><span class="n">source_path</span><span class="o">=</span><span class="s2">&quot;custom.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">beet</span></code> library provides carefully crafted primitives for working with Minecraft resource packs and data packs.</p>
+<ul class="simple">
+<li><p>Create, read, edit and merge resource packs and data packs</p></li>
+<li><p>Handle zipped and unzipped packs</p></li>
+<li><p>Fast and lazy by default, files are transparently loaded when needed</p></li>
+<li><p>Statically typed API enabling rich intellisense and autocompletion</p></li>
+</ul>
+</div>
+<div class="section" id="toolchain">
+<h2>Toolchain<a class="headerlink" href="#toolchain" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="https://mcbeet.dev/toolchain/">Documentation</a></p>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">beet</span> <span class="kn">import</span> <span class="n">Context</span><span class="p">,</span> <span class="n">Function</span>
+
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Context</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin that adds a function for greeting the player.&quot;&quot;&quot;</span>
+    <span class="n">ctx</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;greet:hello&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Function</span><span class="p">([</span><span class="s2">&quot;say hello&quot;</span><span class="p">],</span> <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;minecraft:load&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">beet</span></code> toolchain is designed to support a wide range of use-cases. The most basic pipeline will let you create configurable resource packs and data packs, but plugins make it easy to implement arbitrarily advanced workflows and tools like linters, asset generators and function pre-processors.</p>
+<ul class="simple">
+<li><p>Compose plugins that can inspect and edit the generated resource pack and data pack</p></li>
+<li><p>Configure powerful build systems for development and creating releases</p></li>
+<li><p>First-class template integration approachable without prior Python knowledge</p></li>
+<li><p>Link the generated resource pack and data pack to Minecraft</p></li>
+<li><p>Automatically rebuild the project on file changes with watch mode</p></li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>The package can be installed with <code class="docutils literal notranslate"><span class="pre">pip</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install beet
+</pre></div>
+</div>
+<p>You can make sure that <code class="docutils literal notranslate"><span class="pre">beet</span></code> was successfully installed by trying to use the toolchain from the command-line.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ beet --help
+Usage: beet <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+
+  The beet toolchain.
+
+Options:
+  -d, --directory DIRECTORY  Use the specified project directory.
+  -c, --config FILE          Use the specified config file.
+  -v, --version              Show the version and exit.
+  -h, --help                 Show this message and exit.
+
+Commands:
+  build  Build the current project.
+  cache  Inspect or clear the cache.
+  link   Link the generated resource pack and data pack to Minecraft.
+  watch  Watch the project directory and build on file changes.
+</pre></div>
+</div>
+</div>
+<div class="section" id="status">
+<h2>Status<a class="headerlink" href="#status" title="Permalink to this headline">¶</a></h2>
+<p>You can expect current releases to be pretty stable, but the project as a whole should still be considered alpha.</p>
+<p>The main reason is that resource pack and data pack coverage is currently lacking in certain areas. Exposing a consistent interface for every data pack and resource pack feature can involve design decisions that aren’t immediately obvious. You’re welcome to open an issue to discuss the implementation of currently unsupported resources. And feel free to ask questions, report bugs, and share your thoughts and impressions.</p>
+</div>
+<div class="section" id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h2>
+<p>Contributions are welcome. Make sure to first open an issue discussing the problem or the new feature before creating a pull request. The project uses <a class="reference external" href="https://python-poetry.org"><code class="docutils literal notranslate"><span class="pre">poetry</span></code></a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ poetry install
+</pre></div>
+</div>
+<p>You can run the tests with <code class="docutils literal notranslate"><span class="pre">poetry</span> <span class="pre">run</span> <span class="pre">pytest</span></code>. We use <a class="reference external" href="https://github.com/vberlier/pytest-minecraft"><code class="docutils literal notranslate"><span class="pre">pytest-minecraft</span></code></a> to run tests against actual Minecraft releases.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ poetry run pytest
+$ poetry run pytest --minecraft-latest
+</pre></div>
+</div>
+<p>We also use <a class="reference external" href="https://github.com/vberlier/pytest-minecraft"><code class="docutils literal notranslate"><span class="pre">pytest-insta</span></code></a> for snapshot testing. Data pack and resource pack snapshots make it easy to monitor and review changes.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ poetry run pytest --insta review
+</pre></div>
+</div>
+<p>The project must type-check with <a class="reference external" href="https://github.com/microsoft/pyright"><code class="docutils literal notranslate"><span class="pre">pyright</span></code></a>. If you’re using VSCode the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance"><code class="docutils literal notranslate"><span class="pre">pylance</span></code></a> extension should report diagnostics automatically. You can also install the type-checker locally with <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code> and run it from the command-line.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ npm run watch
+$ npm run check
+</pre></div>
+</div>
+<p>The code follows the <a class="reference external" href="https://github.com/psf/black"><code class="docutils literal notranslate"><span class="pre">black</span></code></a> code style. Import statements are sorted with <a class="reference external" href="https://pycqa.github.io/isort/"><code class="docutils literal notranslate"><span class="pre">isort</span></code></a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ poetry run isort beet tests
+$ poetry run black beet tests
+$ poetry run black --check beet tests
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="library/" class="btn btn-neutral float-right" title="Library documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Valentin Berlier
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
